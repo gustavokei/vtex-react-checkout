@@ -7,7 +7,9 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 ![app image](https://i.imgur.com/UDLqxW1.gif)
 
 ## Features:
+
 - ReactJS support and all its benefits (plugins, hooks, context api, etc)
+- Typescript support
 - SCSS support
 - Easy SVG importing
 - Support for legacy code (your old `checkout6-custom.js` scripts should work without any issues)
@@ -19,13 +21,17 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 Clone this repository into your `checkout-ui-custom` folder and run
 
 ```js
-yarn
+yarn;
 ```
+
 Then, compile `checkout6-custom.js` and `checkout6-custom.css` by running
+
 ```js
 yarn dev
 ```
+
 Finally, link your app
+
 ```js
 vtex link
 ```
@@ -35,6 +41,7 @@ Saving your work will automatically recompile the main files
 Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts/main.js`, no changes required
 
 ## Folder Structure
+
     .
     ├── src                       # Source
     │   ├── icons                 # SVG Icons
@@ -71,6 +78,7 @@ window.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<ExampleComponent />, div);
 });
 ```
+
 This will render a react component before the first child of the `.cart-template` element as soon as the page loads
 
 In order to timely render a component, you'll need to create your own methods:
@@ -95,7 +103,6 @@ window.addEventListener("DOMContentLoaded", () => {
     checkHash();
   });
 });
-
 ```
 
 In the example above, the component will render everytime `#/payment` loads

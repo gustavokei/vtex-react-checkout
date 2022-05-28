@@ -1,11 +1,12 @@
 const webpack = require('webpack')
 const path = require('path')
 const outputDir = './'
-const TerserPlugin = require('terser-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const RemovePlugin = require('remove-files-webpack-plugin')
 const svgToMiniDataURI = require('mini-svg-data-uri')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = () => {
   return [
@@ -13,7 +14,7 @@ module.exports = () => {
       entry: {
         'checkout6-custom': [
           './src/checkout6-custom.scss',
-          './src/checkout6-custom.js',
+          './src/checkout6-custom.tsx',
         ],
       },
       output: {
@@ -34,6 +35,11 @@ module.exports = () => {
         ],
       },
       plugins: [
+        new ForkTsCheckerWebpackPlugin(),
+        new MiniCssExtractPlugin({
+          filename: '[name].css',
+          chunkFilename: '[id].css',
+        }),
         new RemovePlugin({
           before: {
             test: [
@@ -52,21 +58,21 @@ module.exports = () => {
             ],
           },
         }),
-        new MiniCssExtractPlugin({
-          filename: '[name].css',
-          chunkFilename: '[id].css',
-        }),
       ],
       module: {
         rules: [
           {
-            test: /\.js$|jsx/,
+            test: /\.js$|jsx|tsx/,
             exclude: /node_modules/,
             use: [
               {
                 loader: 'babel-loader',
                 options: {
-                  presets: ['@babel/preset-env', '@babel/preset-react'],
+                  presets: [
+                    '@babel/preset-typescript',
+                    '@babel/preset-env',
+                    '@babel/preset-react',
+                  ],
                   plugins: [
                     '@babel/plugin-proposal-optional-chaining',
                     '@babel/plugin-proposal-nullish-coalescing-operator',
@@ -116,7 +122,7 @@ module.exports = () => {
       },
       resolve: {
         preferRelative: true,
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.tsx'],
         alias: {
           '~styles': path.resolve(__dirname, 'src', 'styles'),
           '~scripts': path.resolve(__dirname, 'src', 'scripts'),
