@@ -1,0 +1,38 @@
+{
+  "name": "checkout-ui-settings",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack --watch --mode=production",
+    "build": "webpack --watch --mode=production --config ./webpack.config.js",
+    "build:dev": "webpack --mode=development --config ./webpack.config.js --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.17.12",
+    "@babel/plugin-proposal-optional-chaining": "^7.17.12",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "autoprefixer": "^10.4.7",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "cssnano": "^5.1.9",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "mini-svg-data-uri": "^1.4.4",
+    "postcss-loader": "^7.0.0",
+    "react": "18.1.x",
+    "react-dom": "18.1.x",
+    "remove-files-webpack-plugin": "^1.5.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "swiper": "^8.1.6"
+  }
+}
