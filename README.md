@@ -37,7 +37,7 @@ Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts
 ## Folder Structure
     .
     ├── src                       # Source
-    │   ├── icons                 # Icons
+    │   ├── icons                 # SVG Icons
     │   ├── scripts               # JS
     │   ├── styles                # SCSS
     │   ├── checkout6-custom.js   # JS importer
