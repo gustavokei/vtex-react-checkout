@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<ExampleComponent />, div);
 });
 ```
-This will render a react component into the `.cart-template` element as soon as the page loads
+This will render a react component before the first child of the `.cart-template` element as soon as the page loads
 
 In order to timely render a component, you'll need to create your own methods:
 
