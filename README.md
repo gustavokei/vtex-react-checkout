@@ -1,6 +1,6 @@
 # vtex-react-checkout
 
-This is a WIP boilerplate for using React (and more!) within VTEX Checkout UI Custom
+This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI Custom](https://vtex.io/docs/components/functional/vtex.checkout-ui-custom@0.0.9/)
 
 ## Preview
 
@@ -10,8 +10,9 @@ This is a WIP boilerplate for using React (and more!) within VTEX Checkout UI Cu
 - ReactJS support and all its benefits (plugins support, hooks, context api, etc)
 - SCSS support
 - Easy SVG importing
-- Support for legacy scripts (your old `checkout6-custom.js` should work without any issues)
-- Integrity Hash for files check up
+- Support for legacy code (your old `checkout6-custom.js` scripts should work without any issues)
+- Integrity Hash for files check-up
+- A much more organized files structure
 
 ## Installation
 
@@ -31,7 +32,7 @@ vtex link
 
 Saving your work will automatically recompile the main files
 
-Your old code should be reimplemented into `src/scripts/main.js`, no changes required
+Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts/main.js`, no changes required
 
 ## Folder Structure
     .
@@ -72,7 +73,7 @@ window.addEventListener("DOMContentLoaded", () => {
 ```
 This will render a react component into the `.cart-template` element as soon as the page loads
 
-In order to timely render a component, you'll need to create your own methods, for instance
+In order to timely render a component, you'll need to create your own methods:
 
 ```js
 import React from "react";
@@ -97,7 +98,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 ```
 
-The component will render every time `#/payment` loads
+In the example above, the component will render everytime `#/payment` loads
 
 You can go even deeper into the complexity layers. To illustrate, by using `MutationObserver` and/or listening to VTEX's methods like `orderFormUpdated.vtex`, be creative 😉
 
