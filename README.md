@@ -10,7 +10,7 @@ This is a WIP boilerplate for using React (and more!) within VTEX Checkout UI Cu
 - ReactJS support and all its benefits (plugins support, hooks, context api, etc)
 - SCSS support
 - Easy SVG importing
-- Support for legacy scripts (your old `checkout6-custom.js` will work without any issues)
+- Support for legacy scripts (your old `checkout6-custom.js` should work without any issues)
 - Integrity Hash for files check up
 
 ## Installation
@@ -30,6 +30,8 @@ vtex link
 ```
 
 Saving your work will automatically recompile the main files
+
+Your old code should be reimplemented into `src/scripts/main.js`, no changes required
 
 ## Folder Structure
     .
@@ -110,4 +112,4 @@ Just put your component inside the `components` folder. There is no catch!
     │   └── index.js
     └── ...
 
-Feel free to take a look at this repo's example component. I have implemented React's Context API + [Swiper](https://github.com/nolimits4web/swiper) slider.
+Feel free to take a look at this repo's example component. I have implemented React's Context API + [Swiper](https://github.com/nolimits4web/swiper) slider
