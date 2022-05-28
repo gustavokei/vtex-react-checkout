@@ -7,7 +7,7 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 ![app image](https://i.imgur.com/UDLqxW1.gif)
 
 ## Features:
-- ReactJS support and all its benefits (plugins support, hooks, context api, etc)
+- ReactJS support and all its benefits (plugins, hooks, context api, etc)
 - SCSS support
 - Easy SVG importing
 - Support for legacy code (your old `checkout6-custom.js` scripts should work without any issues)
@@ -113,4 +113,4 @@ Just put your component inside the `components` folder. There is no catch!
     │   └── index.js
     └── ...
 
-Feel free to take a look at this repo's example component. I have implemented React's Context API + [Swiper](https://github.com/nolimits4web/swiper) slider
+Feel free to take a look at this repo's example component. I have implemented React's Context API + [Swiper](https://github.com/nolimits4web/swiper) slider. Installing plugins is also easy, you should get away with it by following their instructions
