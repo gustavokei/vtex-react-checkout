@@ -21,7 +21,7 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 Clone this repository into your `checkout-ui-custom` folder and run
 
 ```js
-yarn;
+yarn
 ```
 
 Then, compile `checkout6-custom.js` and `checkout6-custom.css` by running
@@ -38,7 +38,7 @@ vtex link
 
 Saving your work will automatically recompile the main files
 
-Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts/main.js`, no changes required
+Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts/main.jsx`, no changes required
 
 ## Folder Structure
 
@@ -47,8 +47,8 @@ Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts
     │   ├── icons                 # SVG Icons
     │   ├── scripts               # JS
     │   ├── styles                # SCSS
-    │   ├── checkout6-custom.js   # JS importer
-    │   └── checkout6-custom.scss # SCSS importer
+    │   ├── checkout6-custom.scss # SCSS importer
+    │   └── checkout6-custom.tsx  # TSX importer
     ├── checkout6-custom.css      # Compiled CSS
     ├── checkout6-custom.js       # Compiled JS
     └── ...
@@ -57,13 +57,13 @@ Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts
 
 ### Step 1 - Creating a render method
 
-Inside the `scripts` folder, create a `renderComponent.js` file
+Inside the `scripts` folder, create a `renderComponent.tsx` file
 
     .
     ├── scripts
     │   ├── components
-    │   ├── main.js
-    │   └── renderComponent.js <<
+    │   ├── main.jsx
+    │   └── renderComponent.tsx <<
     └── ...
 
 ```js
@@ -74,7 +74,7 @@ import ExampleComponent from "./components/ExampleComponent";
 window.addEventListener("DOMContentLoaded", () => {
   const div = document.createElement("div");
   div.setAttribute("class", "example-preact-component");
-  document.querySelector(".cart-template").prepend(div);
+  document.querySelector(".cart-template")?.prepend(div);
   ReactDOM.render(<ExampleComponent />, div);
 });
 ```
@@ -93,7 +93,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (location.hash === "#/payment") {
       const div = document.createElement("div");
       div.setAttribute("class", "another-example-component");
-      document.querySelector(".cart-template").prepend(div);
+      document.querySelector(".cart-template")?.prepend(div);
       ReactDOM.render(<AnotherExampleComponent />, div);
     }
   };
@@ -116,8 +116,8 @@ Just put your component inside the `components` folder. There is no catch!
     .
     ├── components/ExampleComponent
     │   ├── context
-    │   ├── ExampleContent.js
-    │   └── index.js
+    │   ├── ExampleContent.tsx
+    │   └── index.tsx
     └── ...
 
 Feel free to take a look at this repo's example component. I have implemented React's Context API + [Swiper](https://github.com/nolimits4web/swiper) slider. Installing plugins is also easy, you should get away with it by following their instructions
