@@ -21,7 +21,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.0.0",
-    "cssnano": "^5.1.9",
+    "cssnano": "^5.1.10",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^7.2.11",
     "mini-css-extract-plugin": "^2.6.0",
