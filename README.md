@@ -1,6 +1,6 @@
 # vtex-react-checkout
 
-This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI Custom](https://vtex.io/docs/components/functional/vtex.checkout-ui-custom@0.0.9/)
+This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI Custom](https://vtex.io/docs/components/functional/vtex.checkout-ui-custom@0.0.9/), created by [Enzo Spagnolli](https://github.com/Enzo3322), [Gabriel Nobrega](https://github.com/ganobrega), and [Gustavo Amemiya](https://github.com/gustavokei)
 
 ## Preview
 
