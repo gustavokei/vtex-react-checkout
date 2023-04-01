@@ -18,11 +18,13 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 
 ## Installation
 
-Clone this repository into your `checkout-ui-custom` folder and run
+Download this repository into your `checkout-ui-custom` folder to  and run
 
 ```js
 yarn
 ```
+
+* PS: If you don't have the folder `checkout-ui-custom` in your project folder, rename the folder `vtex-react-checkout` that you downloaded to `checkout-ui-custom`
 
 Then, compile `checkout6-custom.js` and `checkout6-custom.css` by running
 
