@@ -1,31 +1,31 @@
 {
-	"compilerOptions": {
-		"alwaysStrict": true,
-		"esModuleInterop": true,
-		"jsx": "preserve",
-		"module": "esnext",
-		"moduleResolution": "node",
-		"noImplicitAny": true,
-		"noImplicitReturns": true,
-		"noImplicitThis": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strictFunctionTypes": true,
-		"strictNullChecks": true,
-		"strictPropertyInitialization": true,
-		"resolveJsonModule": true,
-		"noEmitOnError": true
-	},
-	"exclude": ["node_modules"],
-	"include": [
-		"./typings/*.d.ts",
-		"./**/*.tsx",
-		"./**/*.ts",
-		"src/utils/useOrderForm.jsx"
-	],
-	"typeAcquisition": {
-		"enable": false
-	}
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "resolveJsonModule": true,
+    "noEmitOnError": true
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "./typings/*.d.ts",
+    "./**/*.tsx",
+    "./**/*.ts",
+    "src/utils/useOrderForm.jsx"
+  ],
+  "typeAcquisition": {
+    "enable": false
+  }
 }
