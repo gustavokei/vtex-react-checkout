@@ -16,15 +16,18 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 - Integrity Hash for files check-up
 - A much more organized files structure
 
-## Installation
+## Requirements
+1. [Yarn](https://classic.yarnpkg.com/lang/en/docs/install) to run this project.
+2. [Checkout UI Custom](https://github.com/vtex-apps/checkout-ui-custom#configuration) configurated.
 
-Download this repository into your `checkout-ui-custom` folder to  and run
+## Installation
+Download this repository into your `checkout-ui-custom` folder and run
 
 ```js
 yarn
 ```
 
-* PS: If you don't have the folder `checkout-ui-custom` in your project folder, rename the folder `vtex-react-checkout` that you downloaded to `checkout-ui-custom`
+* PS: If you don't have the folder `checkout-ui-custom` in your project folder, rename the folder `vtex-react-checkout` that you downloaded to `checkout-ui-custom` as you can see at [Folder Structure](#folder-structure) section.
 
 Then, compile `checkout6-custom.js` and `checkout6-custom.css` by running
 
@@ -44,7 +47,7 @@ Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts
 
 ## Folder Structure
 
-    .
+    .checkout-ui-custom
     ├── src                       # Source
     │   ├── icons                 # SVG Icons
     │   ├── scripts               # JS
@@ -61,7 +64,7 @@ Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts
 
 Inside the `scripts` folder, create a `renderComponent.tsx` file
 
-    .
+    .checkout-ui-custom
     ├── scripts
     │   ├── components
     │   ├── main.jsx
@@ -115,7 +118,7 @@ You can go even deeper into the complexity layers. To illustrate, by using `Muta
 
 Just put your component inside the `components` folder. There is no catch!
 
-    .
+    .checkout-ui-custom
     ├── components/ExampleComponent
     │   ├── context
     │   ├── ExampleContent.tsx
