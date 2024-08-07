@@ -18,40 +18,28 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 
 ## Installation
 
-Clone this repository into your `checkout-ui-custom` folder and run
+- Run `vtex init`
 
-```js
-yarn
-```
+- Select `checkout-ui-settings`
+![Screenshot 2023-05-22 at 10 27 43](https://github.com/gustavokei/vtex-react-checkout/assets/20908077/c6ac71a5-17f0-4ef2-8f97-5d657a52be1e)
 
-Then, compile `checkout6-custom.js` and `checkout6-custom.css` by running
+- You should get the following folder structure:
+![Screenshot 2023-05-22 at 10 29 00](https://github.com/gustavokei/vtex-react-checkout/assets/20908077/d146c316-f6ac-4c4d-8816-377f2249e5d3)
 
-```js
-yarn dev
-```
+- Make sure you have the `checkout-ui-custom` builder in your `manifest.json` file
+![Screenshot 2023-05-22 at 10 29 48](https://github.com/gustavokei/vtex-react-checkout/assets/20908077/3c909836-3f3d-4aa9-8a0b-64850d37fe93)
 
-Finally, link your app
+- Delete all files inside the `checkout-ui-custom` folder and clone or download this repository into it. Your folder should look like this:
+![Screenshot 2023-05-22 at 10 32 08](https://github.com/gustavokei/vtex-react-checkout/assets/20908077/831ef0fa-4745-4c52-bf73-844340e23156)
 
-```js
-vtex link
-```
+- Now, open a terminal INSIDE the folder `checkout-ui-custom` path and run `yarn`, then `yarn dev`. This should start the webpack watcher:
+![Screenshot 2023-05-22 at 10 35 06](https://github.com/gustavokei/vtex-react-checkout/assets/20908077/74e64602-35e7-4f14-8b32-914096c8e1a0)
 
-Saving your work will automatically recompile the main files
+- Make sure `checkout6-custom.js` and `checkout6-custom.css` were generated:
+![Screenshot 2023-05-22 at 10 38 34](https://github.com/gustavokei/vtex-react-checkout/assets/20908077/f36a151b-4461-4671-9dd3-20238e567de3)
 
-Your old `checkout6-custom.js` scripts should be reimplemented into `src/scripts/main.jsx`, no changes required
-
-## Folder Structure
-
-    .
-    ├── src                       # Source
-    │   ├── icons                 # SVG Icons
-    │   ├── scripts               # JS
-    │   ├── styles                # SCSS
-    │   ├── checkout6-custom.scss # SCSS importer
-    │   └── checkout6-custom.tsx  # TSX importer
-    ├── checkout6-custom.css      # Compiled CSS
-    ├── checkout6-custom.js       # Compiled JS
-    └── ...
+- Finally, run `vtex link` in your vtex workspace and you should see a slider somewhere in `https://yourworkspace--youraccount.myvtex.com/checkout#/cart`
+![app image](https://i.imgur.com/UDLqxW1.gif)
 
 ## Implementing a React Component
 
