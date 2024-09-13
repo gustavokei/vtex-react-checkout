@@ -14,6 +14,10 @@ This is a WIP boilerplate for using React (and more!) within [VTEX Checkout UI C
 
 ## Installation
 
+- If you don't have `vtex.checkout-ui-custom` installed in your account yet, get it here: https://apps.vtex.com/vtex-checkout-ui-custom/p
+
+- Then, install it with `vtex install vtex.checkout-ui-custom`
+
 - Run `vtex init` in a new folder
 
 - Select `checkout-ui-settings`
