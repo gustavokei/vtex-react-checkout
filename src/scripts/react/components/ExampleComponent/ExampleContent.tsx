@@ -14,6 +14,7 @@ const ExampleComponent = () => {
 
   useEffect(() => {
     setTimeout(() => {
+      console.log('this is a react script')
       setNumber(number + 1)
     }, 1000)
   }, [number])

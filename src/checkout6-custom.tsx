@@ -1,2 +1,2 @@
-import "./scripts/main";
-import "./scripts/renderExampleComponent";
+import "./scripts/legacy";
+import "./scripts/react";
